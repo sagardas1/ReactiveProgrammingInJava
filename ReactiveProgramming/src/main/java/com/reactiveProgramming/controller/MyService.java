@@ -26,6 +26,7 @@ public class MyService {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("unused")
 		int a[]= {1,2,3,2,3,2,4,5};
 		
 	}
