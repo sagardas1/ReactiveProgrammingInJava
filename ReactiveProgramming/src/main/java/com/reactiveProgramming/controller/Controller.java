@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping("product")
+@RequestMapping("/product")
 public class Controller {
-	@Autowired
-	RestTemplate restTemplate;
+	
 	
 	@Autowired
 	MyService myService;

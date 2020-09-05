@@ -3,8 +3,8 @@ package com.reactiveProgramming.controller;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-import org.springframework.data.annotation.Id;
 
 @Entity
 public class Product {
@@ -13,6 +13,9 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long productId;
 	private String productName;
+	
+	
+	
 	public long getProductId() {
 		return productId;
 	}
