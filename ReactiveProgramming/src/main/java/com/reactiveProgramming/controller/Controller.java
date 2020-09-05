@@ -13,10 +13,13 @@ public class Controller {
 	@Autowired
 	RestTemplate restTemplate;
 	
+	@Autowired
+	MyService myService;
+	
 	@GetMapping(value="/getproductbyid/{id}")
-	public String getProductById(@PathVariable(value ="id")long id) {
-		restTemplate.getForObject("", String.class);
-		return null;
+	public Product getProductById(@PathVariable(value ="id")long id) {
+		//restTemplate.getForObject("", String.class);
+		return myService.getProductById(id);
 	}
 	
 
