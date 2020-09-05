@@ -1,5 +1,7 @@
 package com.reactiveProgramming.controller;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +17,19 @@ public class MyService {
 	private ProductDAO myDao;
 	public Product getProductById(long id) {
 	List<Product> product=myDao.getProductById(id);
+	
+	
+
+	
+	
 		return product.get(0);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		int a[]= {1,2,3,2,3,2,4,5};
+		
 	}
 
 }
