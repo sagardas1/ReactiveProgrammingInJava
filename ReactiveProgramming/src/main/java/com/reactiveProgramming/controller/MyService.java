@@ -1,7 +1,5 @@
 package com.reactiveProgramming.controller;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
