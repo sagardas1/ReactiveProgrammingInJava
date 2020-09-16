@@ -18,6 +18,15 @@ public class MyService {
 
 		return product.get(0);
 	}
+	
+	public List<Product> getAllProduct(long id) {
+		List<Product> list = myDao.getAllProduct();
+
+		
+		
+		return list;
+	}
+	
 
 	public static void main(String[] args) {
 

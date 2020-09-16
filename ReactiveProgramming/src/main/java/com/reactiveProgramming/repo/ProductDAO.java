@@ -19,6 +19,11 @@ import com.reactiveProgramming.controller.Product;
   @Transactional
   @Query(value="select * from Product where productId =:id", nativeQuery =true) 
   List<Product> getProductById(long id);
+
+  
+  @Transactional
+  @Query(value="select * from Product", nativeQuery =true) 
+List<Product> getAllProduct();
   
   }
  
