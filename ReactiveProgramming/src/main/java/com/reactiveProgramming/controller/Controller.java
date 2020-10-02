@@ -16,7 +16,6 @@ public class Controller {
 	
 	@GetMapping(value="/getproductbyid/{id}")
 	public Product getProductById(@PathVariable(value ="id")long id) {
-		//restTemplate.getForObject("", String.class);
 		return myService.getProductById(id);
 	}
 	
