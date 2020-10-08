@@ -9,15 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/product")
 public class Controller {
-	
-	
+
 	@Autowired
 	MyService myService;
-	
-	@GetMapping(value="/getproductbyid/{id}")
-	public Product getProductById(@PathVariable(value ="id")long id) {
+
+	@GetMapping(value = "/getproductbyid/{id}")
+	public Product getProductById(@PathVariable(value = "id") long id) {
 		return myService.getProductById(id);
 	}
-	
 
 }
